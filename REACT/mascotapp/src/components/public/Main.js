@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
+import RickAndMortyService from '../../services/RickAndMortyService';
 import Cards from './Cards';
-
 export class Main extends Component {
 	constructor(props) {
 		super(props);
-		console.log('hola desde el constructor');
+		this.state= {mascotas: []};
+
+		
 	}
 
 	componentDidMount() {
-		console.log('hola desde componentDidmount');
+		RickAndMortyService.
 	}
 	render() {
-		console.log('hola desde el render');
+		
 		return (
 			<main>
 				<section className="py-5 text-center container">
